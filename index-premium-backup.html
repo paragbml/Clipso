@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipso — The Infrastructure for Viral Content</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Ambient glow effects -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <div class="logo-mark">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+                        <path d="M9 11L14 16L9 21M16 21H23" stroke="#050505" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+                                <stop stop-color="#FFB800"/>
+                                <stop offset="1" stop-color="#FF8A00"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span>Clipso</span>
+            </a>
+            <div class="nav-links">
+                <a href="#infrastructure">Infrastructure</a>
+                <a href="#performance">Performance</a>
+                <a href="#institutions">For Institutions</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-link">Sign In</a>
+                <a href="#" class="btn btn-primary">
+                    <span>Request Access</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <div class="hero-eyebrow">
+                        <div class="eyebrow-indicator"></div>
+                        <span>$2.4M+ Distributed to Creators</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">The Infrastructure</span>
+                        <span class="title-line">for <em>Viral</em> Content</span>
+                    </h1>
+                    <p class="hero-desc">Enterprise-grade distribution network connecting elite video editors with institutional brands. Performance-based payouts. Real-time analytics. Zero friction.</p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary btn-lg">
+                            <span>Start Earning</span>
+                            <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <a href="#" class="btn btn-ghost btn-lg">Launch Campaign</a>
+                    </div>
+                    
+                    <!-- Trust indicators -->
+                    <div class="trust-row">
+                        <div class="trust-metric">
+                            <span class="trust-value">127M+</span>
+                            <span class="trust-label">Views Delivered</span>
+                        </div>
+                        <div class="trust-divider"></div>
+                        <div class="trust-metric">
+                            <span class="trust-value">5,847</span>
+                            <span class="trust-label">Active Creators</span>
+                        </div>
+                        <div class="trust-divider"></div>
+                        <div class="trust-metric">
+                            <span class="trust-value">99.9%</span>
+                            <span class="trust-label">Uptime</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-dashboard">
+                    <!-- Main earnings card -->
+                    <div class="glass-card earnings-card">
+                        <div class="card-glow"></div>
+                        <div class="card-header">
+                            <div class="card-label">
+                                <span class="label-dot"></span>
+                                Portfolio Value
+                            </div>
+                            <span class="card-period">This Month</span>
+                        </div>
+                        <div class="card-value">
+                            <span class="value-currency">$</span>
+                            <span class="value-amount" data-value="12847">12,847</span>
+                            <span class="value-cents">.62</span>
+                        </div>
+                        <div class="card-trend">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 10l4-4 3 3 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 4h4v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span>+23.5% vs last month</span>
+                        </div>
+                        
+                        <!-- Luminous chart -->
+                        <div class="luminous-chart">
+                            <svg viewBox="0 0 400 120" preserveAspectRatio="none">
+                                <defs>
+                                    <linearGradient id="amberGlow" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#FFB800" stop-opacity="0.3"/>
+                                        <stop offset="100%" stop-color="#FFB800" stop-opacity="0"/>
+                                    </linearGradient>
+                                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                        <feMerge>
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <!-- Grid lines -->
+                                <line x1="0" y1="30" x2="400" y2="30" stroke="rgba(255,255,255,0.03)"/>
+                                <line x1="0" y1="60" x2="400" y2="60" stroke="rgba(255,255,255,0.03)"/>
+                                <line x1="0" y1="90" x2="400" y2="90" stroke="rgba(255,255,255,0.03)"/>
+                                <!-- Area fill -->
+                                <path d="M0,120 L0,85 C40,82 80,75 120,68 C160,61 200,52 240,40 C280,28 320,18 360,12 L400,8 L400,120 Z" fill="url(#amberGlow)"/>
+                                <!-- Luminous line -->
+                                <path class="chart-filament" d="M0,85 C40,82 80,75 120,68 C160,61 200,52 240,40 C280,28 320,18 360,12 L400,8" fill="none" stroke="#FFB800" stroke-width="2" filter="url(#glow)"/>
+                                <!-- Data points -->
+                                <circle cx="120" cy="68" r="4" fill="#FFB800" filter="url(#glow)"/>
+                                <circle cx="240" cy="40" r="4" fill="#FFB800" filter="url(#glow)"/>
+                                <circle cx="400" cy="8" r="5" fill="#FFB800" filter="url(#glow)"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="card-stats">
+                            <div class="stat-block">
+                                <span class="stat-value mono">156</span>
+                                <span class="stat-label">Clips</span>
+                            </div>
+                            <div class="stat-block">
+                                <span class="stat-value mono">8.4M</span>
+                                <span class="stat-label">Views</span>
+                            </div>
+                            <div class="stat-block">
+                                <span class="stat-value mono">$1.53</span>
+                                <span class="stat-label">CPM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Active distributions feed -->
+                    <div class="glass-card activity-card">
+                        <div class="card-header">
+                            <span class="card-label">Active Distributions</span>
+                            <span class="live-indicator">
+                                <span class="live-dot"></span>
+                                Live
+                            </span>
+                        </div>
+                        <div class="activity-feed">
+                            <div class="activity-item">
+                                <div class="activity-brand">
+                                    <div class="brand-logo nike">N</div>
+                                    <span class="brand-name">Nike</span>
+                                </div>
+                                <div class="activity-data">
+                                    <span class="data-value">+2.4M</span>
+                                    <span class="data-label">views</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-brand">
+                                    <div class="brand-logo redbull">R</div>
+                                    <span class="brand-name">Red Bull</span>
+                                </div>
+                                <div class="activity-data">
+                                    <span class="data-value">+1.8M</span>
+                                    <span class="data-label">views</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-brand">
+                                    <div class="brand-logo spotify">S</div>
+                                    <span class="brand-name">Spotify</span>
+                                </div>
+                                <div class="activity-data">
+                                    <span class="data-value">+956K</span>
+                                    <span class="data-label">views</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-brand">
+                                    <div class="brand-logo apple">A</div>
+                                    <span class="brand-name">Apple</span>
+                                </div>
+                                <div class="activity-data">
+                                    <span class="data-value">+742K</span>
+                                    <span class="data-label">views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating notification -->
+                    <div class="floating-notification">
+                        <div class="notif-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <div class="notif-content">
+                            <span class="notif-title">Payout Received</span>
+                            <span class="notif-amount">+$892.40</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Bar -->
+    <section class="trusted-bar">
+        <div class="container">
+            <div class="trusted-content">
+                <span class="trusted-label">Trusted by leading platforms</span>
+                <div class="trusted-logos">
+                    <div class="platform-logo">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                        <span>TikTok</span>
+                    </div>
+                    <div class="platform-logo">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/></svg>
+                        <span>Instagram</span>
+                    </div>
+                    <div class="platform-logo">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        <span>YouTube</span>
+                    </div>
+                    <div class="platform-logo">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        <span>X</span>
+                    </div>
+                    <div class="platform-logo">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                        <span>Telegram</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Section - Bento Grid -->
+    <section id="infrastructure" class="section">
+        <div class="section-glow"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Infrastructure</span>
+                <h2 class="section-title">Built for <em>Scale</em></h2>
+                <p class="section-desc">Three pillars of institutional-grade content distribution.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <div class="bento-card bento-large">
+                    <div class="card-glow amber"></div>
+                    <div class="bento-number">01</div>
+                    <div class="bento-content">
+                        <h3>Access Elite Campaigns</h3>
+                        <p>Browse curated opportunities from Fortune 500 brands. Each campaign is vetted, funded, and ready for distribution across our network.</p>
+                    </div>
+                    <div class="bento-visual">
+                        <div class="campaign-preview">
+                            <div class="preview-header">
+                                <span class="preview-badge">Featured</span>
+                                <span class="preview-payout">$0.45 CPM</span>
+                            </div>
+                            <div class="preview-brands">
+                                <div class="preview-brand">N</div>
+                                <div class="preview-brand">R</div>
+                                <div class="preview-brand">A</div>
+                                <span class="preview-more">+12 more</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bento-card bento-medium">
+                    <div class="bento-number">02</div>
+                    <div class="bento-content">
+                        <h3>Deploy Content</h3>
+                        <p>Create high-conversion clips. Our AI-powered tools optimize posting times and platform targeting.</p>
+                    </div>
+                    <div class="bento-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l5 5-5 5M4 4v7a4 4 0 004 4h12"/></svg>
+                    </div>
+                </div>
+                
+                <div class="bento-card bento-medium">
+                    <div class="bento-number">03</div>
+                    <div class="bento-content">
+                        <h3>Collect Returns</h3>
+                        <p>Automated weekly settlements. PayPal, Crypto, Wire. Minimum threshold: $50.</p>
+                    </div>
+                    <div class="bento-metric">
+                        <span class="metric-symbol">$</span>
+                        <span class="metric-number">2.4M</span>
+                        <span class="metric-suffix">paid out</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Analytics -->
+    <section id="performance" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Performance</span>
+                <h2 class="section-title">Real-Time <em>Intelligence</em></h2>
+                <p class="section-desc">Institutional-grade analytics. Every view tracked. Every dollar accounted.</p>
+            </div>
+            
+            <div class="analytics-bento">
+                <!-- Main chart card -->
+                <div class="glass-card analytics-main">
+                    <div class="card-glow amber"></div>
+                    <div class="analytics-header">
+                        <div class="analytics-title">
+                            <h3>Network Performance</h3>
+                            <span class="analytics-period">Last 6 months</span>
+                        </div>
+                        <div class="analytics-legend">
+                            <span class="legend-item"><span class="legend-dot amber"></span>Views</span>
+                            <span class="legend-item"><span class="legend-dot white"></span>Revenue</span>
+                        </div>
+                    </div>
+                    
+                    <div class="luminous-chart-large">
+                        <div class="chart-y-axis">
+                            <span>100M</span>
+                            <span>75M</span>
+                            <span>50M</span>
+                            <span>25M</span>
+                            <span>0</span>
+                        </div>
+                        <svg class="performance-chart" viewBox="0 0 800 240" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="amberGradient" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#FFB800" stop-opacity="0.4"/>
+                                    <stop offset="50%" stop-color="#FFB800" stop-opacity="0.1"/>
+                                    <stop offset="100%" stop-color="#FFB800" stop-opacity="0"/>
+                                </linearGradient>
+                                <filter id="glowLarge" x="-50%" y="-50%" width="200%" height="200%">
+                                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                    <feMerge>
+                                        <feMergeNode in="coloredBlur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <!-- Grid -->
+                            <line x1="0" y1="48" x2="800" y2="48" stroke="rgba(255,255,255,0.04)"/>
+                            <line x1="0" y1="96" x2="800" y2="96" stroke="rgba(255,255,255,0.04)"/>
+                            <line x1="0" y1="144" x2="800" y2="144" stroke="rgba(255,255,255,0.04)"/>
+                            <line x1="0" y1="192" x2="800" y2="192" stroke="rgba(255,255,255,0.04)"/>
+                            <!-- Area -->
+                            <path d="M0,240 L0,200 C80,195 160,180 240,155 C320,130 400,100 480,70 C560,40 640,25 720,15 L800,10 L800,240 Z" fill="url(#amberGradient)"/>
+                            <!-- Luminous line -->
+                            <path class="chart-filament-large" d="M0,200 C80,195 160,180 240,155 C320,130 400,100 480,70 C560,40 640,25 720,15 L800,10" fill="none" stroke="#FFB800" stroke-width="2.5" filter="url(#glowLarge)"/>
+                            <!-- Secondary line -->
+                            <path d="M0,220 C80,218 160,210 240,195 C320,180 400,165 480,145 C560,125 640,110 720,100 L800,95" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="6,6"/>
+                            <!-- Data points -->
+                            <circle cx="240" cy="155" r="6" fill="#FFB800" filter="url(#glowLarge)"/>
+                            <circle cx="480" cy="70" r="6" fill="#FFB800" filter="url(#glowLarge)"/>
+                            <circle cx="720" cy="15" r="7" fill="#FFB800" filter="url(#glowLarge)"/>
+                        </svg>
+                        <div class="chart-x-axis">
+                            <span>Jan</span>
+                            <span>Feb</span>
+                            <span>Mar</span>
+                            <span>Apr</span>
+                            <span>May</span>
+                            <span>Jun</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Metric cards row -->
+                <div class="metrics-grid">
+                    <div class="glass-card metric-card">
+                        <div class="metric-label">Total Views</div>
+                        <div class="metric-value-large">
+                            <span class="mono">127.4</span><span class="metric-unit">M</span>
+                        </div>
+                        <div class="metric-change positive">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            <span>24.5%</span>
+                        </div>
+                        <div class="mini-bars">
+                            <div class="mini-bar" style="--h: 40%"></div>
+                            <div class="mini-bar" style="--h: 55%"></div>
+                            <div class="mini-bar" style="--h: 45%"></div>
+                            <div class="mini-bar" style="--h: 70%"></div>
+                            <div class="mini-bar" style="--h: 65%"></div>
+                            <div class="mini-bar" style="--h: 85%"></div>
+                            <div class="mini-bar" style="--h: 100%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card metric-card">
+                        <div class="metric-label">Active Creators</div>
+                        <div class="metric-value-large">
+                            <span class="mono">5,847</span>
+                        </div>
+                        <div class="metric-change positive">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            <span>12.3%</span>
+                        </div>
+                        <div class="mini-bars">
+                            <div class="mini-bar" style="--h: 50%"></div>
+                            <div class="mini-bar" style="--h: 60%"></div>
+                            <div class="mini-bar" style="--h: 55%"></div>
+                            <div class="mini-bar" style="--h: 75%"></div>
+                            <div class="mini-bar" style="--h: 80%"></div>
+                            <div class="mini-bar" style="--h: 90%"></div>
+                            <div class="mini-bar" style="--h: 100%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card metric-card">
+                        <div class="metric-label">Avg. CPM</div>
+                        <div class="metric-value-large">
+                            <span class="mono">$1.89</span>
+                        </div>
+                        <div class="metric-change positive">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            <span>8.7%</span>
+                        </div>
+                        <div class="mini-bars">
+                            <div class="mini-bar" style="--h: 65%"></div>
+                            <div class="mini-bar" style="--h: 70%"></div>
+                            <div class="mini-bar" style="--h: 60%"></div>
+                            <div class="mini-bar" style="--h: 75%"></div>
+                            <div class="mini-bar" style="--h: 85%"></div>
+                            <div class="mini-bar" style="--h: 80%"></div>
+                            <div class="mini-bar" style="--h: 100%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card metric-card featured">
+                        <div class="card-glow amber"></div>
+                        <div class="metric-label">Total Distributed</div>
+                        <div class="metric-value-large amber">
+                            <span class="mono">$2.4</span><span class="metric-unit">M</span>
+                        </div>
+                        <div class="metric-change positive">
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            <span>31.2%</span>
+                        </div>
+                        <div class="mini-bars amber">
+                            <div class="mini-bar" style="--h: 30%"></div>
+                            <div class="mini-bar" style="--h: 45%"></div>
+                            <div class="mini-bar" style="--h: 55%"></div>
+                            <div class="mini-bar" style="--h: 65%"></div>
+                            <div class="mini-bar" style="--h: 75%"></div>
+                            <div class="mini-bar" style="--h: 85%"></div>
+                            <div class="mini-bar" style="--h: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Platform distribution -->
+                <div class="glass-card platform-card">
+                    <h4>Platform Distribution</h4>
+                    <div class="platform-bars">
+                        <div class="platform-row">
+                            <span class="platform-name">TikTok</span>
+                            <div class="platform-bar-track">
+                                <div class="platform-bar-fill" style="--width: 40%"></div>
+                            </div>
+                            <span class="platform-pct mono">40%</span>
+                        </div>
+                        <div class="platform-row">
+                            <span class="platform-name">Instagram</span>
+                            <div class="platform-bar-track">
+                                <div class="platform-bar-fill" style="--width: 25%"></div>
+                            </div>
+                            <span class="platform-pct mono">25%</span>
+                        </div>
+                        <div class="platform-row">
+                            <span class="platform-name">YouTube</span>
+                            <div class="platform-bar-track">
+                                <div class="platform-bar-fill" style="--width: 20%"></div>
+                            </div>
+                            <span class="platform-pct mono">20%</span>
+                        </div>
+                        <div class="platform-row">
+                            <span class="platform-name">Other</span>
+                            <div class="platform-bar-track">
+                                <div class="platform-bar-fill" style="--width: 15%"></div>
+                            </div>
+                            <span class="platform-pct mono">15%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Edge Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Competitive Edge</span>
+                <h2 class="section-title">Superior <em>Yield</em></h2>
+                <p class="section-desc">Our creators earn 3-5x more per view than platform creator funds—on top of regular monetization.</p>
+            </div>
+            
+            <div class="comparison-modern">
+                <div class="comparison-header">
+                    <div class="comparison-cell header-label">Platform</div>
+                    <div class="comparison-cell header-value">100K Views</div>
+                    <div class="comparison-cell header-value">500K Views</div>
+                    <div class="comparison-cell header-value">1M Views</div>
+                </div>
+                <div class="comparison-row highlight">
+                    <div class="comparison-cell platform">
+                        <svg width="20" height="20" viewBox="0 0 28 28" fill="none">
+                            <rect width="28" height="28" rx="6" fill="currentColor"/>
+                            <path d="M8 10L12 14L8 18M14 18H20" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Clipso
+                    </div>
+                    <div class="comparison-cell">$30 – $50</div>
+                    <div class="comparison-cell">$150 – $250</div>
+                    <div class="comparison-cell">$300 – $500</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell platform">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                        TikTok Creator Fund
+                    </div>
+                    <div class="comparison-cell muted">$2 – $4</div>
+                    <div class="comparison-cell muted">$10 – $20</div>
+                    <div class="comparison-cell muted">$20 – $40</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell platform">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        YouTube Shorts
+                    </div>
+                    <div class="comparison-cell muted">$5 – $10</div>
+                    <div class="comparison-cell muted">$25 – $50</div>
+                    <div class="comparison-cell muted">$50 – $100</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell platform">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/></svg>
+                        Instagram Reels
+                    </div>
+                    <div class="comparison-cell muted">$1 – $3</div>
+                    <div class="comparison-cell muted">$5 – $15</div>
+                    <div class="comparison-cell muted">$10 – $30</div>
+                </div>
+            </div>
+            
+            <p class="comparison-note">Clipso earnings are additional—stack them on top of platform monetization.</p>
+        </div>
+    </section>
+
+    <!-- For Brands -->
+    <section id="for-brands" class="section section-dark">
+        <div class="container">
+            <div class="split-layout">
+                <div class="split-content">
+                    <span class="section-label">For Brands</span>
+                    <h2>Scale your reach without scaling your budget</h2>
+                    <p class="section-desc">Performance-based pricing means you only pay for actual views. Our network of 5,000+ creators distributes your content across millions of followers.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                            </div>
+                            <div class="feature-text">
+                                <strong>Pay per performance</strong>
+                                <span>Only pay for views delivered</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div class="feature-text">
+                                <strong>5,000+ creators</strong>
+                                <span>Instant access to talent</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div class="feature-text">
+                                <strong>Launch in 24 hours</strong>
+                                <span>Campaign live within a day</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                            </div>
+                            <div class="feature-text">
+                                <strong>Real-time analytics</strong>
+                                <span>Track every metric live</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary">Launch a Campaign</a>
+                </div>
+                
+                <div class="split-visual">
+                    <div class="campaign-card">
+                        <div class="campaign-header">
+                            <span class="campaign-name">Summer Campaign</span>
+                            <span class="campaign-status">Active</span>
+                        </div>
+                        <div class="campaign-metrics">
+                            <div class="campaign-metric">
+                                <span class="cm-value">24.6M</span>
+                                <span class="cm-label">Total Views</span>
+                            </div>
+                            <div class="campaign-metric">
+                                <span class="cm-value">847</span>
+                                <span class="cm-label">Clips Created</span>
+                            </div>
+                            <div class="campaign-metric">
+                                <span class="cm-value">$0.004</span>
+                                <span class="cm-label">Cost/View</span>
+                            </div>
+                        </div>
+                        <div class="campaign-chart">
+                            <div class="campaign-bars">
+                                <div class="c-bar" style="--h:35%"></div>
+                                <div class="c-bar" style="--h:48%"></div>
+                                <div class="c-bar" style="--h:42%"></div>
+                                <div class="c-bar" style="--h:65%"></div>
+                                <div class="c-bar" style="--h:58%"></div>
+                                <div class="c-bar" style="--h:72%"></div>
+                                <div class="c-bar" style="--h:68%"></div>
+                                <div class="c-bar" style="--h:85%"></div>
+                                <div class="c-bar" style="--h:78%"></div>
+                                <div class="c-bar" style="--h:92%"></div>
+                                <div class="c-bar" style="--h:88%"></div>
+                                <div class="c-bar" style="--h:100%"></div>
+                            </div>
+                        </div>
+                        <div class="campaign-footer">
+                            <div class="cf-item">
+                                <span class="cf-value">4.2%</span>
+                                <span class="cf-label">Engagement</span>
+                            </div>
+                            <div class="cf-item">
+                                <span class="cf-value">2.4x</span>
+                                <span class="cf-label">ROI</span>
+                            </div>
+                            <div class="cf-item">
+                                <span class="cf-value">89%</span>
+                                <span class="cf-label">Completion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Testimonials</span>
+                <h2>What creators say</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I went from making $50/month on TikTok to over $3,000/month with Clipso. The campaigns are fun and the pay is actually fair."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div class="author-info">
+                            <span class="author-name">Marcus Chen</span>
+                            <span class="author-role">Pro Clipper • 8 months</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Our app went from 1,000 to 50,000 downloads in 2 weeks. The ROI on Clipso campaigns absolutely destroys traditional paid ads."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah Mitchell</span>
+                            <span class="author-role">Marketing Director • TechStartup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Finally a platform that pays what creators deserve. I clip part-time and earn more than my old full-time job."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ER</div>
+                        <div class="author-info">
+                            <span class="author-name">Emma Rodriguez</span>
+                            <span class="author-role">Top Clipper • 12 months</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Pricing</span>
+                <h2>Transparent, simple pricing</h2>
+                <p class="section-desc">No hidden fees. No surprises. Just results.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>For Clippers</h3>
+                        <div class="pricing-amount">
+                            <span class="price">Free</span>
+                        </div>
+                        <p class="pricing-desc">Start earning with zero upfront cost</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited campaign access</li>
+                        <li>Real-time analytics dashboard</li>
+                        <li>Weekly payouts (min $50)</li>
+                        <li>PayPal, Crypto, Bank Transfer</li>
+                        <li>Training resources & tools</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-block">Start Clipping</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>For Brands</h3>
+                        <div class="pricing-amount">
+                            <span class="price-prefix">from</span>
+                            <span class="price">$0.003</span>
+                            <span class="price-suffix">/view</span>
+                        </div>
+                        <p class="pricing-desc">Performance-based, scale as you grow</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Pay only for views delivered</li>
+                        <li>5,000+ verified creators</li>
+                        <li>Campaign dashboard & analytics</li>
+                        <li>Content approval workflow</li>
+                        <li>Dedicated account manager</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-block">Launch Campaign</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2>Ready to start?</h2>
+                <p>Join thousands of creators and brands already growing with Clipso.</p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+                    <a href="#" class="btn btn-secondary btn-lg">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <rect width="28" height="28" rx="6" fill="currentColor"/>
+                            <path d="M8 10L12 14L8 18M14 18H20" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Clipso</span>
+                    </a>
+                    <p>The platform connecting video editors with brands for viral content creation.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#">How it Works</a>
+                    <a href="#">For Clippers</a>
+                    <a href="#">For Brands</a>
+                    <a href="#">Pricing</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <span>© 2025 Clipso. All rights reserved.</span>
+                <div class="social-links">
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

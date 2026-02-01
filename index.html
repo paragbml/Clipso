@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipso — Turn Long Videos Into Viral Clips</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Global Floating Orbs for Parallax Effect -->
+    <div class="floating-orb orb-purple" style="top: 10%; left: -5%;"></div>
+    <div class="floating-orb orb-green" style="top: 40%; right: -5%;"></div>
+    <div class="floating-orb orb-blue" style="top: 70%; left: 10%;"></div>
+    <div class="floating-orb orb-purple" style="top: 90%; right: 15%;"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <rect width="28" height="28" rx="6" fill="currentColor"/>
+                    <path d="M8 10L12 14L8 18" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 18H20" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>Clipso</span>
+            </a>
+            <div class="nav-links">
+                <a href="#how-it-works">How it works</a>
+                <a href="#for-clippers">For Clippers</a>
+                <a href="#for-brands">For Brands</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="btn-text">Sign in</a>
+                <a href="#" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero parallax-section">
+        <!-- Parallax Background -->
+        <div class="parallax-bg"></div>
+        <!-- Background Elements -->
+        <div class="hero-bg">
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-grid"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Now accepting new clippers</span>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" class="badge-arrow">
+                        <path d="M2.5 6H9.5M9.5 6L6 2.5M9.5 6L6 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h1 class="hero-title">
+                    Turn long videos into<br>
+                    <span class="text-gradient">viral clips that convert.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We connect professional video editors with brands running campaigns. 
+                    You clip. We distribute. Everyone wins.
+                </p>
+                <div class="hero-cta">
+                    <a href="#" class="btn-primary btn-large btn-glow">
+                        <span>Start Clipping Today</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn-secondary btn-large">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M6.5 5.5L10.5 8L6.5 10.5V5.5Z" fill="currentColor"/>
+                        </svg>
+                        <span>Watch Demo</span>
+                    </a>
+                </div>
+                
+                <!-- Floating Avatars -->
+                <div class="hero-social-proof">
+                    <div class="avatar-stack">
+                        <div class="avatar" style="--bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">A</div>
+                        <div class="avatar" style="--bg: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">S</div>
+                        <div class="avatar" style="--bg: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">M</div>
+                        <div class="avatar" style="--bg: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">K</div>
+                        <div class="avatar" style="--bg: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">J</div>
+                    </div>
+                    <span class="social-proof-text">Join <strong>850+ clippers</strong> already earning</span>
+                </div>
+            </div>
+            
+            <!-- Hero Visual - Dashboard Preview -->
+            <div class="hero-visual">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="mockup-title">Clipso Dashboard</span>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="mockup-sidebar">
+                            <div class="sidebar-item active">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="2" width="5" height="5" rx="1"/>
+                                    <rect x="9" y="2" width="5" height="5" rx="1"/>
+                                    <rect x="2" y="9" width="5" height="5" rx="1"/>
+                                    <rect x="9" y="9" width="5" height="5" rx="1"/>
+                                </svg>
+                            </div>
+                            <div class="sidebar-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M2 4h12M2 8h12M2 12h8"/>
+                                </svg>
+                            </div>
+                            <div class="sidebar-item">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="8" cy="8" r="6"/>
+                                    <path d="M8 5v3l2 2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mockup-main">
+                            <div class="mockup-stats">
+                                <div class="mockup-stat-card">
+                                    <span class="mockup-stat-label">This Week</span>
+                                    <span class="mockup-stat-value">$2,847</span>
+                                    <span class="mockup-stat-change positive">+23%</span>
+                                </div>
+                                <div class="mockup-stat-card">
+                                    <span class="mockup-stat-label">Total Views</span>
+                                    <span class="mockup-stat-value">4.2M</span>
+                                    <span class="mockup-stat-change positive">+12%</span>
+                                </div>
+                            </div>
+                            <div class="mockup-chart">
+                                <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="mockupGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3"/>
+                                            <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M0,45 C20,42 40,35 60,30 C80,25 100,28 120,20 C140,12 160,15 180,8 C190,5 200,3 200,3" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+                                    <path d="M0,45 C20,42 40,35 60,30 C80,25 100,28 120,20 C140,12 160,15 180,8 C190,5 200,3 200,3 L200,60 L0,60 Z" fill="url(#mockupGrad)"/>
+                                </svg>
+                            </div>
+                            <div class="mockup-clips">
+                                <div class="mockup-clip">
+                                    <div class="clip-thumb"></div>
+                                    <div class="clip-info">
+                                        <span class="clip-title">Podcast Highlight #47</span>
+                                        <span class="clip-views">1.2M views</span>
+                                    </div>
+                                </div>
+                                <div class="mockup-clip">
+                                    <div class="clip-thumb"></div>
+                                    <div class="clip-info">
+                                        <span class="clip-title">Interview Moment</span>
+                                        <span class="clip-views">847K views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Floating Elements -->
+                <div class="floating-card floating-card-1">
+                    <div class="floating-icon green">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M7 1V13M1 7L7 1L13 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="floating-text">
+                        <span class="floating-label">Revenue</span>
+                        <span class="floating-value">+847%</span>
+                    </div>
+                </div>
+                <div class="floating-card floating-card-2">
+                    <div class="floating-icon purple">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M1 7L5 11L13 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="floating-text">
+                        <span class="floating-label">Clips Delivered</span>
+                        <span class="floating-value">47 today</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stats Bar -->
+        <div class="hero-stats-bar">
+            <div class="stats-container">
+                <div class="hero-stat">
+                    <span class="stat-number" data-target="2.4">0</span><span class="stat-suffix">M+</span>
+                    <span class="stat-label">Clips Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-target="850">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Active Clippers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-target="12">0</span><span class="stat-suffix">B</span>
+                    <span class="stat-label">Views Generated</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Carousel -->
+    <section class="logos">
+        <div class="logos-container">
+            <p class="logos-title">Powering viral content across all platforms</p>
+            <div class="logos-track">
+                <div class="logos-slide">
+                    <!-- YouTube -->
+                    <div class="logo-item">
+                        <span class="logo-icon">▶</span>
+                        <span class="logo-text">YouTube</span>
+                    </div>
+                    <!-- TikTok -->
+                    <div class="logo-item">
+                        <span class="logo-icon">♪</span>
+                        <span class="logo-text">TikTok</span>
+                    </div>
+                    <!-- Instagram -->
+                    <div class="logo-item">
+                        <span class="logo-icon">📷</span>
+                        <span class="logo-text">Instagram</span>
+                    </div>
+                    <!-- Twitch -->
+                    <div class="logo-item">
+                        <span class="logo-icon">🎮</span>
+                        <span class="logo-text">Twitch</span>
+                    </div>
+                    <!-- X -->
+                    <div class="logo-item">
+                        <span class="logo-icon">𝕏</span>
+                        <span class="logo-text">X</span>
+                    </div>
+                    <!-- Spotify -->
+                    <div class="logo-item">
+                        <span class="logo-icon">🎵</span>
+                        <span class="logo-text">Spotify</span>
+                    </div>
+                    <!-- LinkedIn -->
+                    <div class="logo-item">
+                        <span class="logo-icon">in</span>
+                        <span class="logo-text">LinkedIn</span>
+                    </div>
+                    <!-- Podcasts -->
+                    <div class="logo-item">
+                        <span class="logo-icon">🎙</span>
+                        <span class="logo-text">Podcasts</span>
+                    </div>
+                    <!-- Duplicates for loop -->
+                    <div class="logo-item">
+                        <span class="logo-icon">▶</span>
+                        <span class="logo-text">YouTube</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-icon">♪</span>
+                        <span class="logo-text">TikTok</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-icon">📷</span>
+                        <span class="logo-text">Instagram</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-icon">🎮</span>
+                        <span class="logo-text">Twitch</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-icon">𝕏</span>
+                        <span class="logo-text">X</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-icon">🎵</span>
+                        <span class="logo-text">Spotify</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-icon">in</span>
+                        <span class="logo-text">LinkedIn</span>
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-icon">🎙</span>
+                        <span class="logo-text">Podcasts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">[01] How it works</span>
+                <h2 class="section-title">From raw footage to viral content.<br>In three simple steps.</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Submit your content</h3>
+                        <p>Brands upload their long-form videos or share links. Our system automatically queues them for our clipper network.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="visual-upload">
+                            <div class="upload-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17 8 12 3 7 8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                            </div>
+                            <div class="upload-progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Clippers work their magic</h3>
+                        <p>Our vetted editors identify viral moments, add captions, effects, and optimize for each platform's algorithm.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="visual-editing">
+                            <div class="timeline">
+                                <div class="timeline-track"></div>
+                                <div class="timeline-clip clip-1"></div>
+                                <div class="timeline-clip clip-2"></div>
+                                <div class="timeline-clip clip-3"></div>
+                                <div class="timeline-playhead"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Watch the views roll in</h3>
+                        <p>Clips are distributed across platforms. Track performance in real-time with our analytics dashboard.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="visual-chart">
+                            <svg viewBox="0 0 200 80" class="mini-chart">
+                                <defs>
+                                    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="rgba(255,255,255,0.2)"/>
+                                        <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M0,60 Q30,55 50,45 T100,30 T150,20 T200,5" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2"/>
+                                <path d="M0,60 Q30,55 50,45 T100,30 T150,20 T200,5 L200,80 L0,80 Z" fill="url(#chartGradient)"/>
+                            </svg>
+                            <div class="chart-label">+847% <span>views</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Clippers -->
+    <section class="for-clippers" id="for-clippers">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">[02] For Clippers</span>
+                <h2 class="section-title">Your skills deserve real pay.<br>Not exposure.</h2>
+                <p class="section-desc">Join our network of professional editors and get paid for every clip that performs.</p>
+            </div>
+
+            <!-- Social Media Embeds with Flying Hearts -->
+            <div class="social-embeds-showcase">
+                <!-- TikTok Mockup -->
+                <div class="social-embed tiktok-embed">
+                    <div class="embed-phone">
+                        <div class="phone-notch"></div>
+                        <div class="embed-content">
+                            <div class="embed-video-bg"></div>
+                            <div class="embed-overlay">
+                                <div class="embed-creator">
+                                    <div class="creator-avatar">
+                                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%238b5cf6'/%3E%3Ctext x='20' y='25' text-anchor='middle' fill='white' font-size='16' font-weight='bold'%3EJ%3C/text%3E%3C/svg%3E" alt="">
+                                    </div>
+                                    <div class="creator-info">
+                                        <span class="creator-name">@jasoncreator</span>
+                                        <span class="creator-follow">Follow</span>
+                                    </div>
+                                </div>
+                                <div class="embed-caption">
+                                    <p>This editing technique changed everything 🔥 #editing #clipso #viral</p>
+                                </div>
+                            </div>
+                            <div class="embed-actions">
+                                <div class="action-item hearts-action">
+                                    <div class="action-icon heart-icon">❤️</div>
+                                    <span>847K</span>
+                                    <!-- Flying Hearts Container -->
+                                    <div class="flying-hearts">
+                                        <span class="heart" style="--delay: 0s; --x: 10px;">❤️</span>
+                                        <span class="heart" style="--delay: 0.2s; --x: -15px;">💜</span>
+                                        <span class="heart" style="--delay: 0.4s; --x: 5px;">❤️</span>
+                                        <span class="heart" style="--delay: 0.6s; --x: -10px;">💗</span>
+                                        <span class="heart" style="--delay: 0.8s; --x: 15px;">❤️</span>
+                                        <span class="heart" style="--delay: 1s; --x: -5px;">💜</span>
+                                        <span class="heart" style="--delay: 1.2s; --x: 8px;">❤️</span>
+                                        <span class="heart" style="--delay: 1.4s; --x: -12px;">💗</span>
+                                    </div>
+                                </div>
+                                <div class="action-item">
+                                    <div class="action-icon">💬</div>
+                                    <span>12.4K</span>
+                                </div>
+                                <div class="action-item">
+                                    <div class="action-icon">↗️</div>
+                                    <span>54.2K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="embed-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                            <span>TikTok</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram Mockup -->
+                <div class="social-embed instagram-embed">
+                    <div class="embed-phone">
+                        <div class="phone-notch"></div>
+                        <div class="embed-content">
+                            <div class="embed-header">
+                                <div class="ig-user">
+                                    <div class="ig-avatar"></div>
+                                    <span>clipso.official</span>
+                                    <span class="ig-verified">✓</span>
+                                </div>
+                                <span class="ig-more">•••</span>
+                            </div>
+                            <div class="embed-video-bg ig-video"></div>
+                            <div class="ig-actions">
+                                <div class="ig-left-actions">
+                                    <div class="ig-action hearts-action">
+                                        <span class="ig-heart">♥</span>
+                                        <!-- Flying Likes -->
+                                        <div class="flying-hearts ig-hearts">
+                                            <span class="heart" style="--delay: 0.1s; --x: -8px;">❤️</span>
+                                            <span class="heart" style="--delay: 0.3s; --x: 12px;">🧡</span>
+                                            <span class="heart" style="--delay: 0.5s; --x: -15px;">❤️</span>
+                                            <span class="heart" style="--delay: 0.7s; --x: 6px;">💛</span>
+                                            <span class="heart" style="--delay: 0.9s; --x: -10px;">❤️</span>
+                                            <span class="heart" style="--delay: 1.1s; --x: 14px;">🧡</span>
+                                        </div>
+                                    </div>
+                                    <span class="ig-comment">💬</span>
+                                    <span class="ig-share">↗️</span>
+                                </div>
+                                <span class="ig-save">🔖</span>
+                            </div>
+                            <div class="ig-stats">
+                                <span class="ig-likes">1,247,832 likes</span>
+                                <p class="ig-caption"><strong>clipso.official</strong> Another clip going viral 🚀 Created by one of our amazing editors!</p>
+                            </div>
+                        </div>
+                        <div class="embed-badge ig-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <circle cx="12" cy="12" r="4"/>
+                                <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Floating Card -->
+                <div class="social-stats-card">
+                    <div class="stats-card-header">
+                        <span class="stats-card-title">Live Engagement</span>
+                        <span class="stats-card-live">● LIVE</span>
+                    </div>
+                    <div class="live-counter">
+                        <div class="counter-item">
+                            <span class="counter-icon">👍</span>
+                            <span class="counter-value" data-target="2847">0</span>
+                            <span class="counter-label">Likes/min</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-icon">💬</span>
+                            <span class="counter-value" data-target="489">0</span>
+                            <span class="counter-label">Comments/min</span>
+                        </div>
+                        <div class="counter-item">
+                            <span class="counter-icon">↗️</span>
+                            <span class="counter-value" data-target="1205">0</span>
+                            <span class="counter-label">Shares/min</span>
+                        </div>
+                    </div>
+                    <!-- Emoji Rain -->
+                    <div class="emoji-rain">
+                        <span class="rain-emoji" style="--delay: 0s; --left: 10%;">👍</span>
+                        <span class="rain-emoji" style="--delay: 0.3s; --left: 25%;">❤️</span>
+                        <span class="rain-emoji" style="--delay: 0.6s; --left: 45%;">🔥</span>
+                        <span class="rain-emoji" style="--delay: 0.9s; --left: 65%;">👏</span>
+                        <span class="rain-emoji" style="--delay: 1.2s; --left: 80%;">💯</span>
+                        <span class="rain-emoji" style="--delay: 1.5s; --left: 35%;">❤️</span>
+                        <span class="rain-emoji" style="--delay: 1.8s; --left: 55%;">👍</span>
+                        <span class="rain-emoji" style="--delay: 2.1s; --left: 75%;">🔥</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bento-grid">
+                <div class="bento-card bento-large">
+                    <div class="bento-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Performance-based earnings</h3>
+                    <p>Earn $15-50 per clip based on views and engagement. Top clippers make $8,000+ monthly.</p>
+                    <div class="earnings-visual">
+                        <div class="earnings-chart">
+                            <div class="bar-group">
+                                <div class="bar" style="--height: 30%"><span>Jan</span></div>
+                                <div class="bar" style="--height: 45%"><span>Feb</span></div>
+                                <div class="bar" style="--height: 60%"><span>Mar</span></div>
+                                <div class="bar" style="--height: 55%"><span>Apr</span></div>
+                                <div class="bar" style="--height: 80%"><span>May</span></div>
+                                <div class="bar" style="--height: 95%"><span>Jun</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bento-card">
+                    <div class="bento-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Flexible schedule</h3>
+                    <p>Work when you want, where you want. Accept projects that fit your availability.</p>
+                </div>
+                
+                <div class="bento-card">
+                    <div class="bento-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3>Weekly payouts</h3>
+                    <p>Get paid every Friday. No chasing invoices or waiting 30+ days.</p>
+                </div>
+                
+                <div class="bento-card">
+                    <div class="bento-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <h3>Build your reputation</h3>
+                    <p>Earn badges and unlock higher-paying campaigns as you prove your skills.</p>
+                </div>
+                
+                <div class="bento-card">
+                    <div class="bento-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Community & support</h3>
+                    <p>Join our Discord of 850+ editors. Share tips, get feedback, and grow together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Brands -->
+    <section class="for-brands" id="for-brands">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">[03] For Brands</span>
+                <h2 class="section-title">Stop leaving views on the table.</h2>
+                <p class="section-desc">Your long-form content is a goldmine. We help you extract every viral moment.</p>
+            </div>
+            
+            <div class="features-list">
+                <div class="feature-row">
+                    <div class="feature-content">
+                        <h3>850+ vetted clippers at your disposal</h3>
+                        <p>Every editor in our network has passed our skills test. You get quality without the hiring headache.</p>
+                        <ul class="feature-bullets">
+                            <li>Skill-verified editors only</li>
+                            <li>Platform-specific expertise</li>
+                            <li>48-hour turnaround guaranteed</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="clipper-grid">
+                            <div class="clipper-avatar">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&backgroundColor=8b5cf6" alt="">
+                            </div>
+                            <div class="clipper-avatar">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mia&backgroundColor=f093fb" alt="">
+                            </div>
+                            <div class="clipper-avatar">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex&backgroundColor=4facfe" alt="">
+                            </div>
+                            <div class="clipper-avatar">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Ryan&backgroundColor=43e97b" alt="">
+                            </div>
+                            <div class="clipper-avatar">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Taylor&backgroundColor=fa709a" alt="">
+                            </div>
+                            <div class="clipper-avatar">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=a8edea" alt="">
+                            </div>
+                            <div class="clipper-more">+844</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-row reverse">
+                    <div class="feature-content">
+                        <h3>Real-time performance analytics</h3>
+                        <p>Track every clip's performance across all platforms. See what's working and double down.</p>
+                        <ul class="feature-bullets">
+                            <li>Cross-platform tracking</li>
+                            <li>Engagement metrics</li>
+                            <li>ROI calculator built-in</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <div class="dashboard-preview">
+                            <div class="dash-header">
+                                <span class="dash-title">Campaign Performance</span>
+                                <span class="dash-period">Last 30 days</span>
+                            </div>
+                            <div class="dash-stats">
+                                <div class="dash-stat">
+                                    <span class="dash-value">2.4M</span>
+                                    <span class="dash-label">Total Views</span>
+                                </div>
+                                <div class="dash-stat">
+                                    <span class="dash-value">18.2%</span>
+                                    <span class="dash-label">Avg. Engagement</span>
+                                </div>
+                            </div>
+                            <div class="dash-chart">
+                                <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="dashGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" stop-color="rgba(255,255,255,0.15)"/>
+                                            <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path class="chart-line" d="M0,80 C20,75 40,70 60,65 C80,60 100,50 120,45 C140,40 160,35 180,25 C200,15 220,20 240,15 C260,10 280,5 300,8" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2"/>
+                                    <path d="M0,80 C20,75 40,70 60,65 C80,60 100,50 120,45 C140,40 160,35 180,25 C200,15 220,20 240,15 C260,10 280,5 300,8 L300,100 L0,100 Z" fill="url(#dashGradient)"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section class="testimonials">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">[04] What people say</span>
+                <h2 class="section-title">Real results from real users.</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Clipso completely changed my income. I went from struggling on Fiverr to making $6k/month with consistent work."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <span class="author-name">Marcus R.</span>
+                            <span class="author-role">Clipper since 2023</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"We uploaded 10 podcast episodes and got back 47 clips. 3 of them broke 1M views. Insane ROI."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div class="author-info">
+                            <span class="author-name">Sarah K.</span>
+                            <span class="author-role">Marketing Director, TechPod</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The turnaround time is unreal. I submit on Monday, have clips by Wednesday. My social team can actually plan ahead now."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JT</div>
+                        <div class="author-info">
+                            <span class="author-name">James T.</span>
+                            <span class="author-role">Content Lead, Fitness Brand</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Finally found my niche. I only clip gaming content and the quality expectations are clear. No more revision hell."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AL</div>
+                        <div class="author-info">
+                            <span class="author-name">Alex L.</span>
+                            <span class="author-role">Clipper, Gaming Specialist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Analytics Section -->
+    <section class="analytics-showcase">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">[05] Analytics</span>
+                <h2 class="section-title">Track every metric that matters.</h2>
+                <p class="section-desc">Real-time insights across all platforms in one beautiful dashboard.</p>
+            </div>
+            
+            <div class="analytics-grid">
+                <!-- Main Chart Card -->
+                <div class="analytics-card analytics-main">
+                    <div class="analytics-card-header">
+                        <div class="card-title-group">
+                            <h4>Revenue Growth</h4>
+                            <span class="card-badge positive">+127% YoY</span>
+                        </div>
+                        <div class="card-tabs">
+                            <span class="card-tab active">1M</span>
+                            <span class="card-tab">3M</span>
+                            <span class="card-tab">1Y</span>
+                            <span class="card-tab">All</span>
+                        </div>
+                    </div>
+                    <div class="analytics-value-group">
+                        <span class="analytics-big-value">$847,291</span>
+                        <span class="analytics-subvalue">Total Revenue</span>
+                    </div>
+                    <div class="premium-chart">
+                        <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="chart-svg">
+                            <defs>
+                                <linearGradient id="premiumGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.4"/>
+                                    <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.1"/>
+                                    <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+                                </linearGradient>
+                                <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#8b5cf6"/>
+                                    <stop offset="50%" stop-color="#a855f7"/>
+                                    <stop offset="100%" stop-color="#d946ef"/>
+                                </linearGradient>
+                                <filter id="glow">
+                                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                    <feMerge>
+                                        <feMergeNode in="coloredBlur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <!-- Grid Lines -->
+                            <line x1="0" y1="37.5" x2="500" y2="37.5" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                            <line x1="0" y1="75" x2="500" y2="75" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                            <line x1="0" y1="112.5" x2="500" y2="112.5" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                            <!-- Area Fill -->
+                            <path class="chart-area" d="M0,120 C30,115 60,110 90,100 C120,90 150,95 180,85 C210,75 240,80 270,65 C300,50 330,55 360,40 C390,25 420,30 450,20 C470,15 490,10 500,8 L500,150 L0,150 Z" fill="url(#premiumGradient)"/>
+                            <!-- Main Line -->
+                            <path class="chart-line-main" d="M0,120 C30,115 60,110 90,100 C120,90 150,95 180,85 C210,75 240,80 270,65 C300,50 330,55 360,40 C390,25 420,30 450,20 C470,15 490,10 500,8" fill="none" stroke="url(#lineGradient)" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+                            <!-- Data Points -->
+                            <circle cx="90" cy="100" r="4" fill="#8b5cf6" stroke="#0a0a0a" stroke-width="2"/>
+                            <circle cx="180" cy="85" r="4" fill="#8b5cf6" stroke="#0a0a0a" stroke-width="2"/>
+                            <circle cx="270" cy="65" r="4" fill="#a855f7" stroke="#0a0a0a" stroke-width="2"/>
+                            <circle cx="360" cy="40" r="4" fill="#a855f7" stroke="#0a0a0a" stroke-width="2"/>
+                            <circle cx="450" cy="20" r="6" fill="#d946ef" stroke="#0a0a0a" stroke-width="2" class="pulse-dot"/>
+                        </svg>
+                        <div class="chart-labels">
+                            <span>Jan</span>
+                            <span>Feb</span>
+                            <span>Mar</span>
+                            <span>Apr</span>
+                            <span>May</span>
+                            <span>Jun</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Platform Breakdown -->
+                <div class="analytics-card analytics-platforms">
+                    <div class="analytics-card-header">
+                        <h4>Platform Views</h4>
+                        <span class="card-badge">Last 7 days</span>
+                    </div>
+                    <div class="platform-stats">
+                        <div class="platform-item">
+                            <div class="platform-icon tiktok">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.001.595.04.88.12V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                </svg>
+                            </div>
+                            <div class="platform-info">
+                                <span class="platform-name">TikTok</span>
+                                <div class="platform-bar">
+                                    <div class="platform-progress" style="--width: 85%; --color: #ff0050;"></div>
+                                </div>
+                            </div>
+                            <span class="platform-value">4.2M</span>
+                        </div>
+                        <div class="platform-item">
+                            <div class="platform-icon instagram">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                    <circle cx="12" cy="12" r="4"/>
+                                </svg>
+                            </div>
+                            <div class="platform-info">
+                                <span class="platform-name">Instagram</span>
+                                <div class="platform-bar">
+                                    <div class="platform-progress" style="--width: 72%; --color: #E1306C;"></div>
+                                </div>
+                            </div>
+                            <span class="platform-value">3.1M</span>
+                        </div>
+                        <div class="platform-item">
+                            <div class="platform-icon youtube">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </div>
+                            <div class="platform-info">
+                                <span class="platform-name">YouTube</span>
+                                <div class="platform-bar">
+                                    <div class="platform-progress" style="--width: 58%; --color: #FF0000;"></div>
+                                </div>
+                            </div>
+                            <span class="platform-value">2.4M</span>
+                        </div>
+                        <div class="platform-item">
+                            <div class="platform-icon twitter">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </div>
+                            <div class="platform-info">
+                                <span class="platform-name">X (Twitter)</span>
+                                <div class="platform-bar">
+                                    <div class="platform-progress" style="--width: 35%; --color: #1DA1F2;"></div>
+                                </div>
+                            </div>
+                            <span class="platform-value">1.2M</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engagement Donut -->
+                <div class="analytics-card analytics-engagement">
+                    <div class="analytics-card-header">
+                        <h4>Engagement Rate</h4>
+                        <span class="card-badge positive">↑ 4.2%</span>
+                    </div>
+                    <div class="donut-chart-container">
+                        <svg viewBox="0 0 100 100" class="donut-chart">
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="12"/>
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="url(#donutGradient)" stroke-width="12" 
+                                    stroke-dasharray="188.5 251.3" stroke-linecap="round" 
+                                    transform="rotate(-90 50 50)" class="donut-progress"/>
+                            <defs>
+                                <linearGradient id="donutGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#8b5cf6"/>
+                                    <stop offset="100%" stop-color="#22c55e"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="donut-center">
+                            <span class="donut-value">18.2%</span>
+                            <span class="donut-label">Avg Rate</span>
+                        </div>
+                    </div>
+                    <div class="engagement-legend">
+                        <div class="legend-item">
+                            <span class="legend-dot" style="background: #8b5cf6;"></span>
+                            <span>Likes</span>
+                            <span class="legend-value">68%</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-dot" style="background: #22c55e;"></span>
+                            <span>Comments</span>
+                            <span class="legend-value">32%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mini Stats -->
+                <div class="analytics-card analytics-mini">
+                    <div class="mini-stat">
+                        <div class="mini-icon">🎬</div>
+                        <div class="mini-content">
+                            <span class="mini-value">1,247</span>
+                            <span class="mini-label">Clips Created</span>
+                        </div>
+                        <span class="mini-change positive">+23%</span>
+                    </div>
+                </div>
+
+                <div class="analytics-card analytics-mini">
+                    <div class="mini-stat">
+                        <div class="mini-icon">⚡</div>
+                        <div class="mini-content">
+                            <span class="mini-value">2.4h</span>
+                            <span class="mini-label">Avg Delivery</span>
+                        </div>
+                        <span class="mini-change positive">-18%</span>
+                    </div>
+                </div>
+
+                <!-- Weekly Heatmap -->
+                <div class="analytics-card analytics-heatmap">
+                    <div class="analytics-card-header">
+                        <h4>Activity Heatmap</h4>
+                        <span class="card-badge">This Week</span>
+                    </div>
+                    <div class="heatmap-container">
+                        <div class="heatmap-days">
+                            <span>Mon</span>
+                            <span>Tue</span>
+                            <span>Wed</span>
+                            <span>Thu</span>
+                            <span>Fri</span>
+                            <span>Sat</span>
+                            <span>Sun</span>
+                        </div>
+                        <div class="heatmap-grid">
+                            <!-- Row 1: Morning -->
+                            <div class="heatmap-cell" style="--intensity: 0.2;" data-tooltip="Mon 6AM - 8 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.3;" data-tooltip="Tue 6AM - 12 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.4;" data-tooltip="Wed 6AM - 18 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.2;" data-tooltip="Thu 6AM - 9 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.5;" data-tooltip="Fri 6AM - 24 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.1;" data-tooltip="Sat 6AM - 4 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.1;" data-tooltip="Sun 6AM - 3 clips"></div>
+                            <!-- Row 2: Late Morning -->
+                            <div class="heatmap-cell" style="--intensity: 0.5;" data-tooltip="Mon 9AM - 28 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.6;" data-tooltip="Tue 9AM - 34 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.7;" data-tooltip="Wed 9AM - 42 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.8;" data-tooltip="Thu 9AM - 48 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.9;" data-tooltip="Fri 9AM - 56 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.3;" data-tooltip="Sat 9AM - 14 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.2;" data-tooltip="Sun 9AM - 8 clips"></div>
+                            <!-- Row 3: Afternoon -->
+                            <div class="heatmap-cell" style="--intensity: 0.7;" data-tooltip="Mon 12PM - 45 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.8;" data-tooltip="Tue 12PM - 52 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 1.0;" data-tooltip="Wed 12PM - 67 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.9;" data-tooltip="Thu 12PM - 58 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 1.0;" data-tooltip="Fri 12PM - 72 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.5;" data-tooltip="Sat 12PM - 28 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.4;" data-tooltip="Sun 12PM - 21 clips"></div>
+                            <!-- Row 4: Evening -->
+                            <div class="heatmap-cell" style="--intensity: 0.9;" data-tooltip="Mon 6PM - 62 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 1.0;" data-tooltip="Tue 6PM - 78 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.8;" data-tooltip="Wed 6PM - 51 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.9;" data-tooltip="Thu 6PM - 64 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.7;" data-tooltip="Fri 6PM - 43 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.8;" data-tooltip="Sat 6PM - 54 clips"></div>
+                            <div class="heatmap-cell" style="--intensity: 0.6;" data-tooltip="Sun 6PM - 38 clips"></div>
+                        </div>
+                        <div class="heatmap-times">
+                            <span>6AM</span>
+                            <span>9AM</span>
+                            <span>12PM</span>
+                            <span>6PM</span>
+                        </div>
+                        <div class="heatmap-legend">
+                            <span>Less</span>
+                            <div class="legend-scale">
+                                <div style="--intensity: 0.2;"></div>
+                                <div style="--intensity: 0.4;"></div>
+                                <div style="--intensity: 0.6;"></div>
+                                <div style="--intensity: 0.8;"></div>
+                                <div style="--intensity: 1.0;"></div>
+                            </div>
+                            <span>More</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Bar Chart -->
+                <div class="analytics-card analytics-comparison">
+                    <div class="analytics-card-header">
+                        <h4>Before vs After Clipso</h4>
+                        <span class="card-badge positive">+412% avg</span>
+                    </div>
+                    <div class="comparison-chart">
+                        <div class="comparison-item">
+                            <span class="comparison-label">Views</span>
+                            <div class="comparison-bars">
+                                <div class="bar-before" style="--width: 18%;">
+                                    <span>24K</span>
+                                </div>
+                                <div class="bar-after" style="--width: 85%;">
+                                    <span>847K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comparison-item">
+                            <span class="comparison-label">Engagement</span>
+                            <div class="comparison-bars">
+                                <div class="bar-before" style="--width: 12%;">
+                                    <span>2.1%</span>
+                                </div>
+                                <div class="bar-after" style="--width: 72%;">
+                                    <span>18.4%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comparison-item">
+                            <span class="comparison-label">Followers</span>
+                            <div class="comparison-bars">
+                                <div class="bar-before" style="--width: 25%;">
+                                    <span>+120/mo</span>
+                                </div>
+                                <div class="bar-after" style="--width: 95%;">
+                                    <span>+4.2K/mo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comparison-legend">
+                            <div class="legend-before"><span></span> Before</div>
+                            <div class="legend-after"><span></span> After</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Activity Feed -->
+                <div class="analytics-card analytics-activity">
+                    <div class="analytics-card-header">
+                        <h4>Live Activity</h4>
+                        <span class="card-badge live-pulse">● Live</span>
+                    </div>
+                    <div class="activity-feed">
+                        <div class="activity-item">
+                            <div class="activity-icon">🎉</div>
+                            <div class="activity-content">
+                                <span class="activity-text"><strong>@marcus_clips</strong> clip hit 1M views</span>
+                                <span class="activity-time">2 min ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">💰</div>
+                            <div class="activity-content">
+                                <span class="activity-text"><strong>Sarah K.</strong> earned $247 bonus</span>
+                                <span class="activity-time">5 min ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">🚀</div>
+                            <div class="activity-content">
+                                <span class="activity-text"><strong>NovaBrand</strong> launched new campaign</span>
+                                <span class="activity-time">12 min ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">⭐</div>
+                            <div class="activity-content">
+                                <span class="activity-text"><strong>@alexedits</strong> got 5-star rating</span>
+                                <span class="activity-time">18 min ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item new-activity">
+                            <div class="activity-icon">🔥</div>
+                            <div class="activity-content">
+                                <span class="activity-text"><strong>TrendyFashion</strong> clip going viral!</span>
+                                <span class="activity-time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Radial Progress Cards -->
+                <div class="analytics-card analytics-radial">
+                    <div class="radial-progress-group">
+                        <div class="radial-item">
+                            <svg viewBox="0 0 60 60" class="radial-svg">
+                                <circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="4"/>
+                                <circle cx="30" cy="30" r="26" fill="none" stroke="#8b5cf6" stroke-width="4" 
+                                        stroke-dasharray="146.6 163.4" stroke-linecap="round" 
+                                        transform="rotate(-90 30 30)" class="radial-progress"/>
+                            </svg>
+                            <div class="radial-value">89%</div>
+                            <span class="radial-label">Success Rate</span>
+                        </div>
+                        <div class="radial-item">
+                            <svg viewBox="0 0 60 60" class="radial-svg">
+                                <circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="4"/>
+                                <circle cx="30" cy="30" r="26" fill="none" stroke="#22c55e" stroke-width="4" 
+                                        stroke-dasharray="130.3 163.4" stroke-linecap="round" 
+                                        transform="rotate(-90 30 30)" class="radial-progress"/>
+                            </svg>
+                            <div class="radial-value">94%</div>
+                            <span class="radial-label">Client Happy</span>
+                        </div>
+                        <div class="radial-item">
+                            <svg viewBox="0 0 60 60" class="radial-svg">
+                                <circle cx="30" cy="30" r="26" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="4"/>
+                                <circle cx="30" cy="30" r="26" fill="none" stroke="#f59e0b" stroke-width="4" 
+                                        stroke-dasharray="122.5 163.4" stroke-linecap="round" 
+                                        transform="rotate(-90 30 30)" class="radial-progress"/>
+                            </svg>
+                            <div class="radial-value">75%</div>
+                            <span class="radial-label">Viral Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Viral Showcase - Premium Interactive Section -->
+    <section class="social-viral-showcase" id="social-viral">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">[05.5] Viral Impact</span>
+                <h2 class="section-title">Watch your content go viral.<br><span class="text-gradient">Live.</span></h2>
+                <p class="section-desc">Real-time engagement metrics from clips our community creates every day.</p>
+            </div>
+
+            <div class="viral-showcase-grid">
+                <!-- Premium TikTok Mockup with Enhanced Flying Hearts -->
+                <div class="premium-social-embed tiktok-premium">
+                    <div class="phone-frame">
+                        <div class="phone-notch-premium">
+                            <div class="phone-camera"></div>
+                        </div>
+                        <div class="phone-screen">
+                            <div class="tiktok-header">
+                                <span class="tiktok-live-badge">● LIVE</span>
+                                <div class="tiktok-viewers-count">
+                                    <span class="viewer-icon">👁️</span>
+                                    <span class="viewer-count" data-target="24847">0</span>
+                                </div>
+                            </div>
+                            <div class="tiktok-video-bg">
+                                <div class="tiktok-video-overlay"></div>
+                            </div>
+                            <div class="tiktok-sidebar">
+                                <div class="sidebar-action hearts-spam-trigger">
+                                    <span class="action-emoji">❤️</span>
+                                    <span class="action-count">847K</span>
+                                    <!-- Massive Flying Hearts -->
+                                    <div class="flying-hearts-container">
+                                        <span class="flying-heart" style="--delay:0s; --x:-10px; --size:24px;">❤️</span>
+                                        <span class="flying-heart" style="--delay:0.15s; --x:15px; --size:20px;">💜</span>
+                                        <span class="flying-heart" style="--delay:0.3s; --x:-20px; --size:28px;">❤️</span>
+                                        <span class="flying-heart" style="--delay:0.45s; --x:8px; --size:22px;">💗</span>
+                                        <span class="flying-heart" style="--delay:0.6s; --x:-15px; --size:26px;">🧡</span>
+                                        <span class="flying-heart" style="--delay:0.75s; --x:12px; --size:18px;">❤️</span>
+                                        <span class="flying-heart" style="--delay:0.9s; --x:-8px; --size:24px;">💛</span>
+                                        <span class="flying-heart" style="--delay:1.05s; --x:18px; --size:20px;">❤️</span>
+                                        <span class="flying-heart" style="--delay:1.2s; --x:-12px; --size:30px;">💜</span>
+                                        <span class="flying-heart" style="--delay:1.35s; --x:5px; --size:22px;">❤️</span>
+                                        <span class="flying-heart" style="--delay:1.5s; --x:-18px; --size:26px;">💗</span>
+                                        <span class="flying-heart" style="--delay:1.65s; --x:10px; --size:24px;">❤️</span>
+                                    </div>
+                                </div>
+                                <div class="sidebar-action thumbsup-spam-trigger">
+                                    <span class="action-emoji">👍</span>
+                                    <span class="action-count">124K</span>
+                                    <!-- Flying Thumbsup -->
+                                    <div class="flying-thumbs-container">
+                                        <span class="flying-thumb" style="--delay:0.1s; --x:-12px; --size:22px;">👍</span>
+                                        <span class="flying-thumb" style="--delay:0.35s; --x:14px; --size:26px;">👍</span>
+                                        <span class="flying-thumb" style="--delay:0.6s; --x:-8px; --size:20px;">👍🏻</span>
+                                        <span class="flying-thumb" style="--delay:0.85s; --x:10px; --size:28px;">👍</span>
+                                        <span class="flying-thumb" style="--delay:1.1s; --x:-16px; --size:24px;">👍🏽</span>
+                                        <span class="flying-thumb" style="--delay:1.35s; --x:6px; --size:22px;">👍</span>
+                                    </div>
+                                </div>
+                                <div class="sidebar-action">
+                                    <span class="action-emoji">💬</span>
+                                    <span class="action-count">45.2K</span>
+                                </div>
+                                <div class="sidebar-action">
+                                    <span class="action-emoji">↗️</span>
+                                    <span class="action-count">89.1K</span>
+                                </div>
+                            </div>
+                            <div class="tiktok-footer">
+                                <div class="tiktok-user">
+                                    <div class="user-avatar">C</div>
+                                    <span class="user-name">@clipso.clips</span>
+                                    <span class="follow-btn">Follow</span>
+                                </div>
+                                <p class="tiktok-caption">This moment broke the internet 🔥 #viral #clipso</p>
+                            </div>
+                        </div>
+                        <div class="phone-badge tiktok-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                            <span>TikTok</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Instagram Mockup with Flying Hearts -->
+                <div class="premium-social-embed instagram-premium">
+                    <div class="phone-frame">
+                        <div class="phone-notch-premium">
+                            <div class="phone-camera"></div>
+                        </div>
+                        <div class="phone-screen">
+                            <div class="ig-header-premium">
+                                <div class="ig-user-info">
+                                    <div class="ig-avatar-premium">
+                                        <div class="ig-story-ring"></div>
+                                        <span>C</span>
+                                    </div>
+                                    <div class="ig-user-details">
+                                        <span class="ig-username">clipso.official <span class="ig-verified">✓</span></span>
+                                        <span class="ig-location">Trending Worldwide</span>
+                                    </div>
+                                </div>
+                                <span class="ig-options">•••</span>
+                            </div>
+                            <div class="ig-video-container">
+                                <div class="ig-video-bg"></div>
+                                <div class="ig-play-overlay">
+                                    <svg viewBox="0 0 24 24" fill="white" width="64" height="64"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                                <!-- Instagram Double Tap Hearts -->
+                                <div class="ig-double-tap-hearts">
+                                    <span class="double-tap-heart" style="--delay:0s; --scale:1.2;">❤️</span>
+                                    <span class="double-tap-heart" style="--delay:0.3s; --scale:0.8;">❤️</span>
+                                    <span class="double-tap-heart" style="--delay:0.6s; --scale:1;">❤️</span>
+                                    <span class="double-tap-heart" style="--delay:0.9s; --scale:1.4;">❤️</span>
+                                    <span class="double-tap-heart" style="--delay:1.2s; --scale:0.9;">❤️</span>
+                                </div>
+                            </div>
+                            <div class="ig-actions-premium">
+                                <div class="ig-left">
+                                    <span class="ig-action-btn heart-btn">❤️
+                                        <div class="ig-flying-hearts">
+                                            <span class="ig-fly-heart" style="--delay:0s; --x:-15px;">❤️</span>
+                                            <span class="ig-fly-heart" style="--delay:0.2s; --x:12px;">🧡</span>
+                                            <span class="ig-fly-heart" style="--delay:0.4s; --x:-8px;">❤️</span>
+                                            <span class="ig-fly-heart" style="--delay:0.6s; --x:18px;">💗</span>
+                                            <span class="ig-fly-heart" style="--delay:0.8s; --x:-20px;">❤️</span>
+                                            <span class="ig-fly-heart" style="--delay:1s; --x:10px;">💛</span>
+                                            <span class="ig-fly-heart" style="--delay:1.2s; --x:-5px;">❤️</span>
+                                            <span class="ig-fly-heart" style="--delay:1.4s; --x:15px;">💜</span>
+                                        </div>
+                                    </span>
+                                    <span class="ig-action-btn">💬</span>
+                                    <span class="ig-action-btn">↗️</span>
+                                </div>
+                                <span class="ig-action-btn save-btn">🔖</span>
+                            </div>
+                            <div class="ig-stats-premium">
+                                <span class="ig-likes-count"><strong>2,847,291</strong> likes</span>
+                                <p class="ig-caption-premium"><strong>clipso.official</strong> Another viral moment created by our amazing community 🚀✨ #clipso #viral #trending</p>
+                                <span class="ig-timestamp">2 HOURS AGO</span>
+                            </div>
+                        </div>
+                        <div class="phone-badge ig-badge-premium">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1.5" fill="currentColor"/></svg>
+                            <span>Instagram</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Real-Time Metrics Card -->
+                <div class="premium-metrics-panel">
+                    <div class="metrics-header">
+                        <h4>Real-Time Performance</h4>
+                        <span class="metrics-live-badge">● LIVE</span>
+                    </div>
+
+                    <!-- Premium Area Chart -->
+                    <div class="premium-area-chart">
+                        <div class="chart-title-row">
+                            <span class="chart-title">Engagement Over Time</span>
+                            <span class="chart-value-live">+<span class="live-counter-value" data-target="2847">0</span>/sec</span>
+                        </div>
+                        <svg viewBox="0 0 400 120" class="area-chart-svg">
+                            <defs>
+                                <linearGradient id="areaGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.6"/>
+                                    <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+                                </linearGradient>
+                                <linearGradient id="lineGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#8b5cf6"/>
+                                    <stop offset="50%" stop-color="#a855f7"/>
+                                    <stop offset="100%" stop-color="#d946ef"/>
+                                </linearGradient>
+                                <filter id="chartGlow">
+                                    <feGaussianBlur stdDeviation="2" result="blur"/>
+                                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                                </filter>
+                            </defs>
+                            <!-- Grid -->
+                            <line x1="0" y1="30" x2="400" y2="30" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
+                            <line x1="0" y1="60" x2="400" y2="60" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
+                            <line x1="0" y1="90" x2="400" y2="90" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4"/>
+                            <!-- Area -->
+                            <path class="area-path" d="M0,100 C40,90 80,85 120,70 C160,55 200,60 240,45 C280,30 320,35 360,20 C380,12 400,8 400,8 L400,120 L0,120 Z" fill="url(#areaGrad1)"/>
+                            <!-- Line -->
+                            <path class="area-line" d="M0,100 C40,90 80,85 120,70 C160,55 200,60 240,45 C280,30 320,35 360,20 C380,12 400,8 400,8" fill="none" stroke="url(#lineGrad1)" stroke-width="3" stroke-linecap="round" filter="url(#chartGlow)"/>
+                            <!-- Data Points -->
+                            <circle cx="120" cy="70" r="5" fill="#8b5cf6" class="pulse-point"/>
+                            <circle cx="240" cy="45" r="5" fill="#a855f7" class="pulse-point"/>
+                            <circle cx="360" cy="20" r="6" fill="#d946ef" class="pulse-point active"/>
+                        </svg>
+                    </div>
+
+                    <!-- Live Engagement Bars -->
+                    <div class="live-engagement-bars">
+                        <div class="engagement-bar-item">
+                            <div class="bar-header">
+                                <span class="bar-emoji">❤️</span>
+                                <span class="bar-label">Hearts</span>
+                                <span class="bar-value"><span class="animated-counter" data-target="847291">0</span></span>
+                            </div>
+                            <div class="animated-bar-track">
+                                <div class="animated-bar-fill hearts-bar" style="--width:92%;"></div>
+                            </div>
+                        </div>
+                        <div class="engagement-bar-item">
+                            <div class="bar-header">
+                                <span class="bar-emoji">👍</span>
+                                <span class="bar-label">Thumbs Up</span>
+                                <span class="bar-value"><span class="animated-counter" data-target="523847">0</span></span>
+                            </div>
+                            <div class="animated-bar-track">
+                                <div class="animated-bar-fill thumbs-bar" style="--width:78%;"></div>
+                            </div>
+                        </div>
+                        <div class="engagement-bar-item">
+                            <div class="bar-header">
+                                <span class="bar-emoji">💬</span>
+                                <span class="bar-label">Comments</span>
+                                <span class="bar-value"><span class="animated-counter" data-target="124892">0</span></span>
+                            </div>
+                            <div class="animated-bar-track">
+                                <div class="animated-bar-fill comments-bar" style="--width:54%;"></div>
+                            </div>
+                        </div>
+                        <div class="engagement-bar-item">
+                            <div class="bar-header">
+                                <span class="bar-emoji">↗️</span>
+                                <span class="bar-label">Shares</span>
+                                <span class="bar-value"><span class="animated-counter" data-target="89412">0</span></span>
+                            </div>
+                            <div class="animated-bar-track">
+                                <div class="animated-bar-fill shares-bar" style="--width:42%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emoji Rain Effect -->
+                    <div class="emoji-rain-container">
+                        <span class="rain-emoji-item" style="--delay:0s; --left:5%;">❤️</span>
+                        <span class="rain-emoji-item" style="--delay:0.3s; --left:15%;">👍</span>
+                        <span class="rain-emoji-item" style="--delay:0.6s; --left:25%;">🔥</span>
+                        <span class="rain-emoji-item" style="--delay:0.9s; --left:35%;">❤️</span>
+                        <span class="rain-emoji-item" style="--delay:1.2s; --left:45%;">💜</span>
+                        <span class="rain-emoji-item" style="--delay:1.5s; --left:55%;">👍</span>
+                        <span class="rain-emoji-item" style="--delay:1.8s; --left:65%;">💗</span>
+                        <span class="rain-emoji-item" style="--delay:2.1s; --left:75%;">❤️</span>
+                        <span class="rain-emoji-item" style="--delay:2.4s; --left:85%;">👍</span>
+                        <span class="rain-emoji-item" style="--delay:2.7s; --left:95%;">🧡</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Circular Gauge Charts -->
+            <div class="circular-gauges-row">
+                <div class="gauge-card">
+                    <div class="gauge-svg-container">
+                        <svg viewBox="0 0 120 120" class="gauge-svg">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="10"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gaugeGrad1)" stroke-width="10" 
+                                    stroke-dasharray="283" stroke-dashoffset="70" stroke-linecap="round" 
+                                    transform="rotate(-90 60 60)" class="gauge-progress"/>
+                            <defs>
+                                <linearGradient id="gaugeGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#22c55e"/>
+                                    <stop offset="100%" stop-color="#4ade80"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="gauge-center-text">
+                            <span class="gauge-value">98%</span>
+                            <span class="gauge-label">Viral Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gauge-card">
+                    <div class="gauge-svg-container">
+                        <svg viewBox="0 0 120 120" class="gauge-svg">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="10"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gaugeGrad2)" stroke-width="10" 
+                                    stroke-dasharray="283" stroke-dashoffset="113" stroke-linecap="round" 
+                                    transform="rotate(-90 60 60)" class="gauge-progress"/>
+                            <defs>
+                                <linearGradient id="gaugeGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#8b5cf6"/>
+                                    <stop offset="100%" stop-color="#d946ef"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="gauge-center-text">
+                            <span class="gauge-value">18.2%</span>
+                            <span class="gauge-label">Engagement</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gauge-card">
+                    <div class="gauge-svg-container">
+                        <svg viewBox="0 0 120 120" class="gauge-svg">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="10"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gaugeGrad3)" stroke-width="10" 
+                                    stroke-dasharray="283" stroke-dashoffset="42" stroke-linecap="round" 
+                                    transform="rotate(-90 60 60)" class="gauge-progress"/>
+                            <defs>
+                                <linearGradient id="gaugeGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#f59e0b"/>
+                                    <stop offset="100%" stop-color="#f97316"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="gauge-center-text">
+                            <span class="gauge-value">847K</span>
+                            <span class="gauge-label">Avg Views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gauge-card">
+                    <div class="gauge-svg-container">
+                        <svg viewBox="0 0 120 120" class="gauge-svg">
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="10"/>
+                            <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gaugeGrad4)" stroke-width="10" 
+                                    stroke-dasharray="283" stroke-dashoffset="28" stroke-linecap="round" 
+                                    transform="rotate(-90 60 60)" class="gauge-progress"/>
+                            <defs>
+                                <linearGradient id="gaugeGrad4" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#3b82f6"/>
+                                    <stop offset="100%" stop-color="#06b6d4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="gauge-center-text">
+                            <span class="gauge-value">2.4h</span>
+                            <span class="gauge-label">Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">[06] Pricing</span>
+                <h2 class="section-title">Simple, transparent pricing.</h2>
+                <p class="section-desc">No hidden fees. No long-term contracts. Cancel anytime.</p>
+            </div>
+            
+            <div class="pricing-toggle">
+                <span class="toggle-label active">For Brands</span>
+                <span class="toggle-label">For Clippers</span>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <p>For creators testing the waters</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="price">$299</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Up to 10 clips/month
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            2 revision rounds
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Basic analytics
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Email support
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-secondary btn-block">Get Started</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Growth</h3>
+                        <p>For brands scaling content</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="price">$799</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Up to 40 clips/month
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Unlimited revisions
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Advanced analytics
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Priority clipper matching
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Slack support
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-primary btn-block">Get Started</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p>For agencies & large teams</p>
+                    </div>
+                    <div class="pricing-amount">
+                        <span class="price">Custom</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Unlimited clips
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Dedicated clipper team
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            White-label options
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            API access
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5 4.5L6 12L2.5 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Dedicated account manager
+                        </li>
+                    </ul>
+                    <a href="#" class="btn-secondary btn-block">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">[07] FAQ</span>
+                <h2 class="section-title">Common questions.</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I become a clipper?</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Apply through our website, complete a skills assessment (takes about 30 minutes), and if you pass, you'll be onboarded within 48 hours. We're looking for editors who understand viral content and can work efficiently.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's the turnaround time for clips?</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Standard turnaround is 48 hours from upload. Rush delivery (24 hours) is available on Growth and Enterprise plans for an additional fee.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do clippers get paid?</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Payments are processed every Friday via PayPal, Wise, or direct bank transfer. Minimum payout is $50. You can track all your earnings in real-time through the dashboard.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What video formats do you accept?</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major formats: MP4, MOV, AVI, MKV. You can also share YouTube, Vimeo, or Twitch links directly. Maximum file size is 10GB per video.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I request specific clippers?</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! On Growth and Enterprise plans, you can favorite clippers and request them for future projects. Enterprise clients can build a dedicated team of preferred editors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="section-container">
+            <div class="cta-content">
+                <h2>Ready to scale your content?</h2>
+                <p>Join 850+ clippers and 200+ brands already using Clipso to transform their video content.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-primary btn-large">Start Free Trial</a>
+                    <a href="#" class="btn-text">Schedule a call →</a>
+                </div>
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <div class="cta-stat-value">48h</div>
+                        <div class="cta-stat-label">Average delivery</div>
+                    </div>
+                    <div class="cta-stat">
+                        <div class="cta-stat-value">98%</div>
+                        <div class="cta-stat-label">Satisfaction rate</div>
+                    </div>
+                    <div class="cta-stat">
+                        <div class="cta-stat-value">24/7</div>
+                        <div class="cta-stat-label">Support available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <rect width="28" height="28" rx="6" fill="currentColor"/>
+                            <path d="M8 10L12 14L8 18" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 18H20" stroke="#0a0a0a" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span>Clipso</span>
+                    </a>
+                    <p>The professional platform connecting video editors with brands. Turn long-form content into viral clips that drive engagement.</p>
+                    <div class="footer-social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#">For Clippers</a>
+                        <a href="#">For Brands</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Changelog</a>
+                        <a href="#">API</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press Kit</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#">Community</a>
+                        <a href="#">Tutorials</a>
+                        <a href="#">Status</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Clipso. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
