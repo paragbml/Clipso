@@ -7,7 +7,7 @@ const envSchema = z.object({
     NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
     PORT: z.coerce.number().default(8080),
     DATABASE_URL: z.string().min(1),
-    REDIS_URL: z.string().min(1),
+    REDIS_URL: z.string().optional(),
     RUN_INLINE_WORKER: z.string().optional().default("false"),
     METRICS_REFRESH_CRON: z.string().default("*/15 * * * *"),
     ENABLE_MOCK_CRAWLER: z.string().optional().default("true"),
@@ -37,7 +37,9 @@ const raw = parsed.data;
 
 export const env = {
     ...raw,
+    REDIS_URL: clean(raw.REDIS_URL),
     RUN_INLINE_WORKER: raw.RUN_INLINE_WORKER === "true",
+    USE_MEMORY_QUEUE: !clean(raw.REDIS_URL),
     ENABLE_MOCK_CRAWLER: raw.ENABLE_MOCK_CRAWLER !== "false",
     YOUTUBE_API_KEY: clean(raw.YOUTUBE_API_KEY),
     TIKTOK_ACCESS_TOKEN: clean(raw.TIKTOK_ACCESS_TOKEN),

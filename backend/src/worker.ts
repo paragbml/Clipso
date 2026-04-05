@@ -9,7 +9,9 @@ async function shutdown(signal: string): Promise<void> {
     await runtime.stop();
     await metricsQueue.close();
     await prisma.$disconnect();
-    await redis.quit();
+    if (redis) {
+        await redis.quit();
+    }
     process.exit(0);
 }
 

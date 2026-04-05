@@ -7,10 +7,14 @@ import { redis } from "./lib/redis.js";
 
 async function start(): Promise<void> {
     const app = buildServer();
-    const runtime = env.RUN_INLINE_WORKER ? startWorkerRuntime(app.log) : null;
+    const shouldRunInlineWorker = env.RUN_INLINE_WORKER || env.USE_MEMORY_QUEUE;
+    const runtime = shouldRunInlineWorker ? startWorkerRuntime(app.log) : null;
 
-    if (env.RUN_INLINE_WORKER) {
-        app.log.info("inline_worker_enabled");
+    if (shouldRunInlineWorker) {
+        app.log.info(
+            { forcedByMemoryQueue: env.USE_MEMORY_QUEUE && !env.RUN_INLINE_WORKER },
+            "inline_worker_enabled",
+        );
     }
 
     await app.listen({
@@ -28,7 +32,9 @@ async function start(): Promise<void> {
         await app.close();
         await metricsQueue.close();
         await prisma.$disconnect();
-        await redis.quit();
+        if (redis) {
+            await redis.quit();
+        }
         process.exit(0);
     };
 
@@ -44,6 +50,8 @@ async function start(): Promise<void> {
 start().catch(async (error) => {
     console.error(error);
     await prisma.$disconnect();
-    await redis.quit();
+    if (redis) {
+        await redis.quit();
+    }
     process.exit(1);
 });
