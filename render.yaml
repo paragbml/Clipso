@@ -1,12 +1,12 @@
 services:
   - type: web
-    name: clipso-api
+    name: clipso-backend
     runtime: node
     rootDir: backend
     plan: free
     autoDeploy: true
-    buildCommand: npm ci && npm run build && npm run prisma:generate
-    startCommand: npm run prisma:push && npm run seed && npm run start
+    buildCommand: npm ci --include=dev && npm run prisma:generate && npm run build
+    startCommand: npm run prisma:push && node dist/index.js
     healthCheckPath: /v1/health
     envVars:
       - key: NODE_ENV
@@ -14,8 +14,6 @@ services:
       - key: RUN_INLINE_WORKER
         value: "true"
       - key: DATABASE_URL
-        sync: false
-      - key: REDIS_URL
         sync: false
       - key: METRICS_REFRESH_CRON
         value: "*/15 * * * *"
