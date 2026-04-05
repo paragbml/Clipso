@@ -1,0 +1,59 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: clipso-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: clipso
+      POSTGRES_PASSWORD: clipso
+      POSTGRES_DB: clipso
+    ports:
+      - "5432:5432"
+    volumes:
+      - clipso_pg_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: clipso-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+  api:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    container_name: clipso-api
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      NODE_ENV: production
+      PORT: 8080
+      DATABASE_URL: postgresql://clipso:clipso@postgres:5432/clipso?schema=public
+      REDIS_URL: redis://redis:6379
+      METRICS_REFRESH_CRON: "*/15 * * * *"
+      ENABLE_MOCK_CRAWLER: "true"
+    ports:
+      - "8080:8080"
+
+  worker:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+    container_name: clipso-worker
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgresql://clipso:clipso@postgres:5432/clipso?schema=public
+      REDIS_URL: redis://redis:6379
+      METRICS_REFRESH_CRON: "*/15 * * * *"
+      ENABLE_MOCK_CRAWLER: "true"
+    command: ["npm", "run", "start:worker"]
+
+volumes:
+  clipso_pg_data:
