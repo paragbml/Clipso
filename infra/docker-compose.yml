@@ -53,7 +53,7 @@ services:
       REDIS_URL: redis://redis:6379
       METRICS_REFRESH_CRON: "*/15 * * * *"
       ENABLE_MOCK_CRAWLER: "true"
-    command: ["npm", "run", "start:worker"]
+    command: [ "npm", "run", "start:worker" ]
 
 volumes:
   clipso_pg_data:
