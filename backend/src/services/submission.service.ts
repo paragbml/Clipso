@@ -66,6 +66,24 @@ export async function listClipperSubmissions(clipperId: string) {
     });
 }
 
+export async function listCampaignSubmissions(campaignId: string) {
+    return prisma.submission.findMany({
+        where: { campaignId },
+        include: {
+            clipper: {
+                select: {
+                    id: true,
+                    name: true,
+                    email: true,
+                },
+            },
+            socialPosts: true,
+            stats: true,
+        },
+        orderBy: { createdAt: "desc" },
+    });
+}
+
 export async function updateSubmissionReview(input: {
     submissionId: string;
     status: SubmissionStatus;

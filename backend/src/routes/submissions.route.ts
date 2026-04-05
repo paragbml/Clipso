@@ -5,6 +5,7 @@ import { enqueueMetricsRefresh } from "../lib/queue.js";
 import {
     createSubmission,
     getSubmissionById,
+    listCampaignSubmissions,
     listClipperSubmissions,
     updateSubmissionReview,
 } from "../services/submission.service.js";
@@ -60,6 +61,18 @@ export async function submissionsRoutes(app: FastifyInstance): Promise<void> {
         }
 
         const submissions = await listClipperSubmissions(parsed.data.clipperId);
+        return reply.send({ submissions });
+    });
+
+    app.get("/campaigns/:campaignId/submissions", async (request, reply) => {
+        const paramsSchema = z.object({ campaignId: z.string().min(1) });
+        const parsed = paramsSchema.safeParse(request.params);
+
+        if (!parsed.success) {
+            return sendValidationError(reply, parsed.error);
+        }
+
+        const submissions = await listCampaignSubmissions(parsed.data.campaignId);
         return reply.send({ submissions });
     });
 
