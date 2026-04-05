@@ -2,100 +2,113 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clipso Creator Console</title>
-  <link rel="stylesheet" href="app.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clipso Creator Console</title>
+    <link rel="stylesheet" href="app.css" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="brand">
-      <a href="../index.html">Clipso</a>
-      <span class="brand-pill">Creator Console</span>
-    </div>
-    <div class="header-actions">
-      <a class="btn" href="./clipper.html">Go To Clipper App</a>
-      <a class="btn" href="../index.html">Back To Landing</a>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="panel">
-      <h2>API Connection</h2>
-      <p class="muted">Use your backend URL. Local default: http://localhost:8080/v1</p>
-      <div class="row">
-        <input id="apiBase" placeholder="http://localhost:8080/v1" />
-        <button id="saveApi" class="btn-primary">Save & Connect</button>
-      </div>
-    </section>
-
-    <section class="panel">
-      <h2>Creator Identity</h2>
-      <div id="creatorInfo" class="kv"></div>
-    </section>
-
-    <section class="panel">
-      <h2>Create Campaign</h2>
-      <form id="campaignForm" class="grid two">
-        <div class="field">
-          <label>Campaign Title</label>
-          <input id="campaignTitle" required placeholder="Podcast Shorts Launch" />
+    <header class="header">
+        <div class="brand">
+            <a href="../index.html">Clipso</a>
+            <span class="brand-pill">Creator Console</span>
         </div>
-        <div class="field">
-          <label>Budget (USD)</label>
-          <input id="campaignBudget" type="number" min="1" required value="1000" />
+        <div class="header-actions">
+            <a class="btn" href="./clipper.html">Go To Clipper App</a>
+            <a class="btn" href="../index.html">Back To Landing</a>
         </div>
-        <div class="field" style="grid-column: 1 / -1;">
-          <label>Description</label>
-          <textarea id="campaignDescription" placeholder="Goals, style, references, and delivery requirements."></textarea>
-        </div>
-        <div>
-          <button class="btn-gold" type="submit">Create Campaign</button>
-        </div>
-      </form>
-    </section>
+    </header>
 
-    <section class="panel">
-      <h2>Campaign Tracking</h2>
-      <div class="row">
-        <select id="campaignSelect"></select>
-        <button id="reloadCampaign" class="btn">Reload Data</button>
-        <button id="queueMetrics" class="btn-primary">Queue Metrics Refresh</button>
-      </div>
-      <hr class="sep" />
-      <div class="stats">
-        <div class="stat"><div class="stat-label">Total Views</div><div class="stat-value" id="statViews">0</div></div>
-        <div class="stat"><div class="stat-label">Total Submissions</div><div class="stat-value" id="statSubs">0</div></div>
-        <div class="stat"><div class="stat-label">Avg Engagement</div><div class="stat-value" id="statEngagement">0%</div></div>
-        <div class="stat"><div class="stat-label">Total Likes</div><div class="stat-value" id="statLikes">0</div></div>
-      </div>
-    </section>
+    <main class="container">
+        <section class="panel">
+            <h2>API Connection</h2>
+            <p class="muted">Use your backend URL. Default: https://clipso-backend.onrender.com/v1</p>
+            <div class="row">
+                <input id="apiBase" placeholder="https://clipso-backend.onrender.com/v1" />
+                <button id="saveApi" class="btn-primary">Save & Connect</button>
+            </div>
+        </section>
 
-    <section class="panel">
-      <h3>Submission Review Queue</h3>
-      <p class="muted">Approve, reject, or request revisions with payout assignment.</p>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Clip</th>
-              <th>Clipper</th>
-              <th>Status</th>
-              <th>Views</th>
-              <th>Engagement</th>
-              <th>Payout</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody id="submissionRows"></tbody>
-        </table>
-      </div>
-    </section>
-  </main>
+        <section class="panel">
+            <h2>Creator Identity</h2>
+            <div id="creatorInfo" class="kv"></div>
+        </section>
 
-  <div id="toast"></div>
-  <script type="module" src="creator.js"></script>
+        <section class="panel">
+            <h2>Create Campaign</h2>
+            <form id="campaignForm" class="grid two">
+                <div class="field">
+                    <label>Campaign Title</label>
+                    <input id="campaignTitle" required placeholder="Podcast Shorts Launch" />
+                </div>
+                <div class="field">
+                    <label>Budget (USD)</label>
+                    <input id="campaignBudget" type="number" min="1" required value="1000" />
+                </div>
+                <div class="field" style="grid-column: 1 / -1;">
+                    <label>Description</label>
+                    <textarea id="campaignDescription"
+                        placeholder="Goals, style, references, and delivery requirements."></textarea>
+                </div>
+                <div>
+                    <button class="btn-gold" type="submit">Create Campaign</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Campaign Tracking</h2>
+            <div class="row">
+                <select id="campaignSelect"></select>
+                <button id="reloadCampaign" class="btn">Reload Data</button>
+                <button id="queueMetrics" class="btn-primary">Queue Metrics Refresh</button>
+            </div>
+            <hr class="sep" />
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-label">Total Views</div>
+                    <div class="stat-value" id="statViews">0</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Total Submissions</div>
+                    <div class="stat-value" id="statSubs">0</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Avg Engagement</div>
+                    <div class="stat-value" id="statEngagement">0%</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-label">Total Likes</div>
+                    <div class="stat-value" id="statLikes">0</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h3>Submission Review Queue</h3>
+            <p class="muted">Approve, reject, or request revisions with payout assignment.</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Clip</th>
+                            <th>Clipper</th>
+                            <th>Status</th>
+                            <th>Views</th>
+                            <th>Engagement</th>
+                            <th>Payout</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="submissionRows"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <div id="toast"></div>
+    <script type="module" src="creator.js"></script>
 </body>
 
 </html>
