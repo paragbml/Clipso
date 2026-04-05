@@ -1,8 +1,17 @@
 const toastEl = document.getElementById("toast");
 const DEFAULT_API_BASE = "https://clipso-backend.onrender.com/v1";
 
+function isPlaceholderApiBase(value) {
+    const normalized = String(value || "").trim().toLowerCase();
+    return normalized.length === 0 || normalized.includes("your-api-url") || normalized.includes("example.com");
+}
+
 function normalizeApiBase(input) {
-    const base = (input || DEFAULT_API_BASE).trim().replace(/\/$/, "");
+    if (isPlaceholderApiBase(input)) {
+        return DEFAULT_API_BASE;
+    }
+
+    const base = String(input || DEFAULT_API_BASE).trim().replace(/\/$/, "");
     if (base.endsWith("/v1")) return base;
     return `${base}/v1`;
 }
@@ -10,7 +19,13 @@ function normalizeApiBase(input) {
 function getApiBase() {
     const urlApi = new URLSearchParams(window.location.search).get("api");
     const stored = localStorage.getItem("clipso_api_base");
-    return normalizeApiBase(urlApi || stored || DEFAULT_API_BASE);
+    const chosen = normalizeApiBase(urlApi || stored || DEFAULT_API_BASE);
+
+    if (stored !== chosen) {
+        localStorage.setItem("clipso_api_base", chosen);
+    }
+
+    return chosen;
 }
 
 function setApiBase(base) {
@@ -147,7 +162,17 @@ function renderDashboard(dashboard) {
 }
 
 async function loadBootstrapAndCampaigns() {
-    const bootstrap = await api("/dev/bootstrap");
+    let bootstrap = await api("/dev/bootstrap");
+
+    if (!bootstrap.clipper || !bootstrap.campaigns?.length) {
+        try {
+            await api("/dev/seed", { method: "POST" });
+            bootstrap = await api("/dev/bootstrap");
+        } catch {
+            // keep bootstrap payload as-is when seeding isn't available
+        }
+    }
+
     state.clipper = bootstrap.clipper;
     renderClipperInfo();
 
